@@ -735,7 +735,8 @@ def test_federated_schema_without_query_is_valid():
     schema = make_federated_schema(type_defs)
     result = graphql_sync(
         schema,
-        """query GetServiceDetails {
+        """
+        query GetServiceDetails {
                _service {
                    sdl
                }
